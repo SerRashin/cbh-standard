@@ -1,0 +1,17 @@
+{
+    "name": "cbh/cbh-standard",
+    "description": "standard for cbh projects",
+    "keywords": ["coding standard", "cs", "coding", "standard", "ruleset", "phpcs", "PHPCodeSniffer", "CodeSniffer", "sniffer"],
+    "authors": [
+        {
+            "name": "Rashin Sergey",
+            "email": "ser@rashin.me"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CBH\\": "src"
+        }
+    }
+}
