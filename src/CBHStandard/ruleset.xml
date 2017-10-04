@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="CBH">
-    <description>A custom coding standard.</description>
+<ruleset name="CBHStandard">
+    <description>Callbackhunters standards</description>
+
+    <rule ref="CBHStandard.Generic.DeclareStrict"/>
 </ruleset>
