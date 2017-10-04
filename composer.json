@@ -1,5 +1,5 @@
 {
-    "name": "serrashin/cbh-standard",
+    "name": "serrashin/phpcs",
     "description": "standard for cbh projects",
     "keywords": ["coding standard", "cs", "coding", "standard", "ruleset", "phpcs", "PHPCodeSniffer", "CodeSniffer", "sniffer"],
     "authors": [
