@@ -34,7 +34,7 @@ class DeclareStrictSniff implements Sniff
 
         if (!$declare) {
             $error = 'No declare(strict_type = 1) expression found at the beginning of the file';
-            $file->addError($error, $stackPtr, 'NotFound');
+            $file->addError($error, $stackPtr, 'NoneFound');
         }
     }
 }
