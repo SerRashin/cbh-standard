@@ -15,7 +15,7 @@ class DeclareStrictSniff implements Sniff
      *
      * @return array
      */
-    public function register(): array
+    public function register()
     {
         return [T_OPEN_TAG];
     }
@@ -27,7 +27,7 @@ class DeclareStrictSniff implements Sniff
      * @param File $file
      * @param int  $stackPtr
      */
-    public function process(File $file, $stackPtr): void
+    public function process(File $file, $stackPtr)
     {
         $fileBeginning = $file->getTokensAsString(0, 12);
         $declare       = strpos($fileBeginning, 'declare(strict_type = 1)');
