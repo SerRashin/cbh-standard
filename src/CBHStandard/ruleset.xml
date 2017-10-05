@@ -3,4 +3,5 @@
     <description>Callbackhunters standards</description>
 
     <rule ref="CBHStandard.Generic.DeclareStrict"/>
+    <rule ref="CBHStandard.Generic.ValidClassName"/>
 </ruleset>
