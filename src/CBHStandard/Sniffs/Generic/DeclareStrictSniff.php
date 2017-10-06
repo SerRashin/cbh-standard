@@ -6,7 +6,7 @@ use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
 
 /**
- * Проверяет наличие декларирования declare(strict_type = 1)
+ * Проверяет наличие декларирования declare(strict_types = 1)
  */
 class DeclareStrictSniff implements Sniff
 {
@@ -30,10 +30,10 @@ class DeclareStrictSniff implements Sniff
     public function process(File $file, $stackPtr)
     {
         $fileBeginning = $file->getTokensAsString(0, 12);
-        $declare       = strpos($fileBeginning, 'declare(strict_type = 1)');
+        $declare       = strpos($fileBeginning, 'declare(strict_types = 1)');
 
         if (!$declare) {
-            $error = 'No declare(strict_type = 1) expression found at the beginning of the file';
+            $error = 'No declare(strict_types = 1) expression found at the beginning of the file';
             $file->addError($error, $stackPtr, 'NoneFound');
         }
     }
